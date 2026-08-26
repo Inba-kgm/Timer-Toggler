@@ -25,8 +25,8 @@ volatile uint8_t *sreg = (uint8_t*)0x5F;
 volatile uint16_t *input_capture_1 = (uint16_t*)0x86;
 
 void __attribute__((signal,used,externally_visible))__vector_10(){
-	*timer1_ctrl_B ^= (1<<6);
 	*timer1_flag |=(1<<5);
+	*timer1_ctrl_B ^= (1<<6);
 	if(*timer1_ctrl_B & (1<<6)){
 	*portb|= (1<<5);
 	}
@@ -37,17 +37,17 @@ void __attribute__((signal,used,externally_visible))__vector_10(){
 
 int main(){
 
-    *ddrb &= ~(1<<0);
+	*ddrb &= ~(1<<0);
 	*ddrb |= (1<<5);
 	*portb |= (1<<0);
-    *timer1_ctrl_A = 0;
+	*timer1_ctrl_A = 0;
 	*timer1_counter = 0;
-    *sreg |= (1<<7);
+	*sreg |= (1<<7);
 	*timer1_flag |= (1<<5);
 	*timer1_mask |= (1<<5);
 	*timer1_ctrl_B |= (1<<2);
 	*timer1_ctrl_B &= ~(1<<6);
-    while(1){
-
-    }
+	while(1){
+	
+	}
 }
