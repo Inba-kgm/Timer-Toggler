@@ -26,6 +26,7 @@ So this generates a square wave
 <img width="1607" height="1006" alt="image" src="https://github.com/user-attachments/assets/4db079b5-5939-459c-ab12-80e1061e3c15" />
 
 # 4. FastPWM
+### (Used avr/io.h because getting help of my previous code with memory address was so difficult)
 
 Here , a PWM signal is generated with only internal Hardware timer circuit , leaving the MC with no load on it , and the Width of the Pusle
 
