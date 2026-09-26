@@ -34,6 +34,7 @@ is controlled with the OCRnx value , so that the width of the PWM signal is modi
 
 bottom and reset when the TOP value is reached the TCCR is set to 0 and then the OCnx is set to TOP , the prescalar is set to 256 here,
 
+the top value is made adjustable using ICR1 in the FastPWM last commit so that the Duty cycle of the PWM can be altered.
 ## Problem Arose:
 
 The prescalar which was set at first(64) was making the timer to count the time for 1 second as it counts till 249999 which was too high for 
@@ -43,4 +44,9 @@ the counter variable which is 16 bit variable which is 2^16 = 65536 , 65536 << 2
 These are the PWM pulse generated:
 <img width="1622" height="1006" alt="image" src="https://github.com/user-attachments/assets/ba1da08f-04ae-4ab3-98c4-5041ed4c67d1" />
 <img width="1627" height="1002" alt="image" src="https://github.com/user-attachments/assets/27e85e96-7d37-495b-8375-e723537b633c" />
+
+pwm of 25% of duty cycle
+<img width="1591" height="977" alt="image" src="https://github.com/user-attachments/assets/3b882888-ea4f-4f81-9bd4-dc25c8b7a71e" />
+
+
 
