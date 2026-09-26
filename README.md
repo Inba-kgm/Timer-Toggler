@@ -45,7 +45,7 @@ These are the PWM pulse generated:
 <img width="1622" height="1006" alt="image" src="https://github.com/user-attachments/assets/ba1da08f-04ae-4ab3-98c4-5041ed4c67d1" />
 <img width="1627" height="1002" alt="image" src="https://github.com/user-attachments/assets/27e85e96-7d37-495b-8375-e723537b633c" />
 
-pwm of 25% of duty cycle
+### PWM of 25% of duty cycle
 <img width="1591" height="977" alt="image" src="https://github.com/user-attachments/assets/3b882888-ea4f-4f81-9bd4-dc25c8b7a71e" />
 
 
